@@ -1,0 +1,23 @@
+{
+  "name": "crypto-io-api",
+  "version": "0.1.1-alpha",
+  "main": "src/index.js",
+  "repository": "https://github.com/crypto-io/crypto-io-api",
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "install": "crypto-checkpoints",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "clarinet": "^0.11.0",
+    "crypto-checkpoints": "^0.1.0-alpha.1",
+    "crypto-daemon": "^0.1.4",
+    "crypto-io-utils": "^0.1.0-alpha.3",
+    "express": "^4.16.2",
+    "ipfs-api": "^17.2.4",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.4"
+  }
+}
