@@ -43,7 +43,6 @@ daemon.on('ready', () => ready());
 
 daemon.start().catch(error => {
   ready();
-  console.log(error, error.code);
 });
 
 server.listen(api.get('port'), () => {

@@ -8,7 +8,9 @@ const { join } = require('path');
 const { direxists, write } = require('crypto-io-utils');
 const checkpoints = require('./../../checkpoints.json');
 const DB_ID = 'QmRGE6LpXchjcZM5h6grF7cftqPUho5yw5Uya5M8qQF9KG';
-const DATA_PATH = join(process.env.APPDATA, 'crypto-io')
+const { userInfo } = require('os');
+const homedir = userInfo().homedir;
+const DATA_PATH = join(homedir, 'crypto-io')
 let result;
 const HashDB = require('./hashdb.js');
 
