@@ -1,9 +1,9 @@
 const api = require('express')();
 const server = require('http').Server(api);
 const io = require('socket.io')(server);
-const CryptoDaemon = require('crypto-daemon');
+const daemon = require('crypto-daemon');
 const CryptoIoDb = require('./sockets/db');
-const daemon = new CryptoDaemon();
+
 api.set('port', (process.env.PORT || 6060));
 
 const ready = () => {
